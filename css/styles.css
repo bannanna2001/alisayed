@@ -1,0 +1,151 @@
+:root{
+    --gray: rgb(38, 47, 50);
+}
+
+body {
+    font-family: "Californian FB", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-row{
+    display: flex;
+}
+
+.header-row__primary-img{
+    flex: 1 1 65%;
+}
+
+.header-row__primary-img figure{
+    height: 100%;
+}
+
+.header-row__tag{
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 3rem;
+}
+
+.header-row__tag__burger-menu{
+    flex: 0 0 40px;
+}
+
+.header-row__tag__desc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.burger-menu{
+    width: 30px;
+}
+
+.header-row__tag__desc h2{
+    color: var(--gray);
+    font-size: 3.2rem;
+    font-weight: normal;
+    margin-bottom: 2.4rem;
+}
+
+.header-row__tag__desc h2 strong{
+    color: rgb(0, 0, 0);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.header-row__tag__desc p{
+    color: var(--gray);
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.main-row{
+    display: flex;
+}
+
+.main-row__col-1,
+.main-row__col-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-row__col-1{
+    flex: 1 1 40%;
+    color: white;
+    padding: 0 4rem 0 2rem;
+    background: url("../img/row-2-1-back.png") no-repeat;
+    background-size: cover;
+}
+
+.main-row__col-2{
+    flex: 1 1 60%;
+}
+
+.main-row__col-2__row-1{
+    padding: 0 4rem 0 2rem;
+    background: url("../img/row-2-2-back.png") no-repeat;
+    background-size: cover;
+}
+
+.main-row__col-2__row-2{
+    padding: 0 4rem 0 2rem;
+    background: url("../img/row-2-3-back.png") no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.main-row__skills__item{
+    margin: 3rem 2rem 2rem;
+    max-width: 600px;
+}
+
+.main-row__col-2__row-1,
+.main-row__col-2__row-2{
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-row__skills__item h3{
+    font-size: 2.8rem;
+}
+
+.main-row__skills__item p{
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.go_btn{
+    text-decoration: none;
+    font-size: 1rem;
+    margin: 3rem 2rem 4rem;
+    padding: 1rem;
+    max-width: 200px;
+    text-align: center;
+}
+
+.black-border{
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.white-border{
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
