@@ -5,7 +5,7 @@
 body {
     font-family: "Californian FB", sans-serif;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 .content {
@@ -113,8 +113,9 @@ body {
     justify-content: space-around;
 }
 
-.main-row__skills__item h3{
+.h3__title{
     font-size: 2.8rem;
+    font-weight: normal;
 }
 
 .main-row__skills__item p{
@@ -143,9 +144,121 @@ body {
     border-radius: 15px;
 }
 
+.footer-row{
+    display: flex;
+    color: white;
+}
 
+.footer-row__design,
+.footer-row__contact{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem 3rem;
+}
 
+.footer-row__design{
+    flex: 1 1 30%;
+    background: url("../img/row-3-1-back.png") no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+}
 
+.footer-row__contact{
+    flex: 1 1 70%;
+    background: url("../img/row-3-2-back.png") no-repeat;
+    background-size: cover;
+}
 
+.footer-row__contact__title{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
 
+.contact__form{
+    width: 50%;
+}
 
+.contact__form__person{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.contact__form__item{
+    position: relative;
+    margin-right: 1rem;
+    width: 100%;
+}
+
+.contact__form__form-input{
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    color: white;
+    transition: .3s;
+}
+
+.contact__form__form-label{
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+
+.contact__form__form-input::placeholder{
+    color: white;
+}
+
+.contact__form__form-input:focus ~ .contact__form__form-label,
+.contact__form__form-input:not(:placeholder-shown) ~ .contact__form__form-label{
+    top: -1.2rem;
+    left: 2rem;
+    font-size: .8rem;
+}
+
+.contact__form__btn-item{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    max-width: 200px;
+    text-align: center;
+    width: 50%;
+}
+
+.contact__form__btn{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact__form__btn-item .white-border{
+    align-self: flex-end;
+}
+
+.contact__social p{
+    font-size: 1rem;
+}
+
+.contact__social__img{
+    display: flex;
+}
+
+.contact__social__img-item{
+    margin: 1rem 3px;
+    width: 30px;
+}
+
+.contact__social__img-item:first-child{
+    margin-left: 0;
+}
+
+.contact__social__img-item:last-child{
+    margin-right: 0;
+}
+
+.footer-row__design__logo-img{
+    width: 80px;
+}
